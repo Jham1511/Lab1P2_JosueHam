@@ -82,8 +82,8 @@ public class Lab1P2_JosueHam {
         for (int i = 0; i < tokens.length; i++) {
             System.out.println(tokens[i]);
             
-            if (tokens[i].charAt(2) == '/'); {
-                DateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+            if (tokens[i].contains("/")) {
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
                 
                 Date fecha = sdf.parse(tokens[i]);
                 System.out.println(fecha);
